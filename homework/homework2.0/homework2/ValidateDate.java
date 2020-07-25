@@ -3,7 +3,7 @@ package homework2;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class ValidateDate implements Validator {
+public class ValidateDate {
 
 	public static Pattern p1 = Pattern.compile("^([0]?[1-9]|[12][0-9]|[3][01])/([0][1-9]|[1-9]|1[0-2])/\\d{4}");
 

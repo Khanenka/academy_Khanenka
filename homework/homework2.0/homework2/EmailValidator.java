@@ -3,7 +3,7 @@ package homework2;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class EmailValidator implements Validator {
+public class EmailValidator {
 
 	private Pattern p = Pattern.compile("^[A-Z0-9a-z._%+-]+@[A-Za-z0-9\\.-]+\\.[A-Za-z]{2,64}$");
 

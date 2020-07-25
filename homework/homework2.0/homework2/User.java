@@ -32,7 +32,7 @@ public class User {
 		BelarusPhoneValidator belvalidator = new BelarusPhoneValidator();
 
 		do {
-			System.out.println("Введите phone (валидный формат телефона \"+375296666666 ");
+			System.out.println("Введите phone (валидный формат телефона \"+375296666666): ");
 			ph = sc.nextLine();
 			if (belvalidator.validate(ph)) {
 				this.phone = phone;
@@ -43,9 +43,6 @@ public class User {
 		} while (!belvalidator.validate(ph));
 	}
 
-		
-	
-
 	public String getMale() {
 		return mail;
 	}
@@ -55,7 +52,7 @@ public class User {
 		EmailValidator validator = new EmailValidator();
 
 		do {
-			System.out.println("Введите mail (валидный формат \"www.tut.by   www.test.by: ");
+			System.out.println("Введите mail (валидный формат \"www.tut@tut.by   www.test@tut.by: ");
 			email = sc.nextLine();
 			if (validator.validate(email)) {
 				this.mail = email;
