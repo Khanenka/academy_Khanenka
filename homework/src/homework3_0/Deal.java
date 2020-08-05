@@ -1,31 +1,32 @@
-package homework2;
+package homework3_0;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
+import java.util.List;
+
+import homework2.ProducerInfo;
+import homework2.Product;
+import homework2.User;
 
 @ProducerInfo(company = "22", name = "22", number = 0, productTypes = { "22", "22" })
 public class Deal extends Product {
 	private User buyer;
 	private User seller;
-	private Product[] products;
+//	private Product[] products;
 	private double price;
+	private ArrayList<Product> products;
 
 	public Deal() {
 		super();
 	}
 
-	public Deal(User buyer, User seller, Product[] products) {
+	public Deal(User buyer, User seller, ArrayList<Product> products) {
 		super();
 		this.buyer = buyer;
 		this.seller = seller;
 		this.products = products;
-
-	}
-
-	public Deal(int a) {
-
-		super();
 
 	}
 
@@ -45,11 +46,11 @@ public class Deal extends Product {
 		this.seller = seller;
 	}
 
-	public Product[] getProducts() {
+	public ArrayList<Product> getProducts() {
 		return products;
 	}
 
-	public void setProducts(Product[] products) {
+	public void setProducts(ArrayList<Product> products) {
 		this.products = products;
 	}
 
@@ -71,7 +72,7 @@ public class Deal extends Product {
 
 		}
 
-		price = summ;
+		this.price = summ;
 	}
 
 	public void getMyTime() {

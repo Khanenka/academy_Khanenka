@@ -37,10 +37,6 @@ public class ValidateDate {
 
 	}
 
-	@Override
-	public boolean validate(String string) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+	
 
 }

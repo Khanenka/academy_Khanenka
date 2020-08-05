@@ -1,6 +1,6 @@
 package classwork.oop;
 
-import homework2.Deal;
+import homework3_0.Deal;
 
 public class BookMain {
 	public static void main(String[] args) {

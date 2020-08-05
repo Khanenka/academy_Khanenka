@@ -3,6 +3,7 @@ package homework2;
 import java.util.Scanner;
 
 @ProducerInfo(company = "AlpenGold,Nuri", name = "choco", number = 0, productTypes = { "chocolate", "tea" })
+public
 class Product {
 	private double price;
 	private String name;
