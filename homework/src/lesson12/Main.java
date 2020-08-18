@@ -8,7 +8,6 @@ public class Main {
 
 	public static void main(String[] args) {
 		List<String> list = Arrays.asList("красный", "синий", "зеленый", "черный","красный");
-		Task1 <dfd>=new Task1();
-		task1.
+		
 	}
 }

@@ -30,16 +30,16 @@ public class MyCustomDate {
 	}
 
 	public MyCustomDate(int d, int month, int year) {
-		this.d = d;
-		if (d < 1 && d > 7) {
-			System.out.println("Неверный день");
-		}
-		this.m = month;
-		if (d < 1 && d > 12) {
-			System.out.println("Неверный месяц");
-		}
-		this.y = year;
-
+		StringBuilder sb = new StringBuilder();
+		sb.append(d).append("-").append(month).append("-").append(year);
+		this.date = sb.toString();
+		/*
+		 * this.d = d; if (d < 1 && d > 7) { System.out.println("Неверный день"); }
+		 * this.m = month; if (d < 1 && d > 12) { System.out.println("Неверный месяц");
+		 * } this.y = year;
+		 * 
+		 * }
+		 */
 	}
 
 	public void getDate() {
