@@ -70,10 +70,8 @@ public class Task5 {
 			head = count;
 		}
 		head.next = head.prev;
-
 		head.prev = null;
 		return head;
-
 	}
 
 	private static final Scanner scanner = new Scanner(System.in);

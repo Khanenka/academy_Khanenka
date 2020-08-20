@@ -19,13 +19,14 @@ public class MainBoxDemo {
 		integer1.addToIndex(33, 5);
 
 		integer1.addToEnd(90);
-		integer1.removeIndex(9);
+		 integer1.removeIndex(9);
+		integer1.removeItem(90);
 
 		System.out.println(integer1.getLast());
 		System.out.println(integer1.getfirst());
 		System.out.println(integer1.getSize());
 
-		// System.out.println(integer1.printLastFullIndex());
+		 System.out.println(integer1.printLastFullIndex());
 
 		System.out.println(Arrays.toString(integer1.getArray()));
 

@@ -16,8 +16,8 @@ public class Task4 {
 		addProductToMap(catalog, "Product3");
 		addProductToMap(catalog, "Product3");
 		addProductToMap(catalog, "Apple1");
-		for(String product: catalog.keySet()) {
-			System.out.println(product+" "+catalog.get(product));
+		for (String product : catalog.keySet()) {
+			System.out.println(product + " " + catalog.get(product));
 		}
 	}
 
