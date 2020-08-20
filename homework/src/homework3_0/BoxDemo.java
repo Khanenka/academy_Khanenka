@@ -163,18 +163,17 @@ public class BoxDemo<T> {
 	}
 
 	public void removeItem(T item) {
-		int index=0;
-		
-		
+		int index = 0;
+
 		for (T it : array) {
-			int size=array.length;
+			int size = array.length;
 			int numMoved = size - index - 1;
-			
+
 			if (it != null && it == item) {
 
 				T[] temp = (T[]) new Object[(int) it];
 
-				System.arraycopy(array, index , array, index, numMoved  );
+				System.arraycopy(array, index, array, index, numMoved);
 
 				array[--size] = null;
 			}
