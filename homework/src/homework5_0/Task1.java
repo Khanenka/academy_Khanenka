@@ -10,17 +10,21 @@ public class Task1 {
 	 * вами txt файл, если введена "stop" строка тогда закончить запись в файл.
 	 */
 	public static void main(String[] args) {
-		int counter = 0;
-		try (BufferedReader br = new BufferedReader(new FileReader("file.txt"), 1)) {
-			String str;
+		char[] array = new char[50];
+		int size = 0;
+		File file = new File("fileWrite.txt");
+		try (FileWriter fw = new FileWriter(file); FileReader fr = new FileReader(file)) {
 
-			while ((str = br.readLine()) != null) {
-				System.out.println(str);
-				counter++;
+			fw.write("Learn\nJava!\n");
+			fw.flush();
+
+			size = fr.read(array);
+			System.out.println("Количество прочитанных символов: " + size + " ");
+			for (int i = 0; i < size; i++) {
+				System.out.print(array[i]);
 			}
 		} catch (IOException e) {
-			System.out.println(e.getMessage());
+			System.out.print(e.getMessage());
 		}
-		System.out.println("Counter: " + counter);
 	}
 }
